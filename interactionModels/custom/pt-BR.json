@@ -1,0 +1,76 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            }
+          ],
+          "name": "WeatherIntent",
+          "samples": [
+            "Como está o tempo em {city} hoje",
+            "Previsão do tempo para {city}",
+            "Me diga o tempo em {city}",
+            "Quero saber a temperatura em {city}",
+            "qual o clima na cidade de {city}",
+            "me de o tempo em {city}",
+            "qual o tempo em {city} "
+          ]
+        },
+        {
+          "slots": [
+            {
+              "name": "city",
+              "type": "AMAZON.City"
+            }
+          ],
+          "name": "DefinirCidadeFavoritaIntent",
+          "samples": [
+            "Lembrar que minha cidade favorita é {city}",
+            "{city} é a minha cidade favorita",
+            "Quero salvar {city} como minha cidade favorita",
+            "Definir {city} como minha cidade favorita",
+            "minha cidade favorita é {city}"
+          ]
+        },
+        {
+          "slots": [],
+          "name": "ClimaCidadeFavoritaIntent",
+          "samples": [
+            "Quero saber a temperatura na minha cidade favorita",
+            "Me diga o tempo na minha cidade favorita",
+            "Previsão do tempo para minha cidade favorita",
+            "Como está o tempo na minha cidade favorita hoje",
+            "Qual o tempo na minha cidade favorita",
+            "clima na minha cidade"
+          ]
+        }
+      ],
+      "types": [],
+      "invocationName": "meu tempo"
+    }
+  }
+}
